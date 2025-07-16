@@ -1,9 +1,0 @@
-{
-	"name": "CopyFromADLSto",
-	"properties": {
-		"folder": {
-			"name": "AdhocPractice"
-		},
-		"annotations": []
-	}
-}
