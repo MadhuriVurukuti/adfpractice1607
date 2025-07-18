@@ -72,7 +72,14 @@
 							"outputs": [
 								{
 									"referenceName": "ds_csv_parameterized",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"file": {
+											"value": "@item().name",
+											"type": "Expression"
+										},
+										"folder": "github"
+									}
 								}
 							]
 						}
