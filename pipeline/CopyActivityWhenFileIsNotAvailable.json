@@ -55,7 +55,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "file1op_DS",
+						"referenceName": "DummyOp",
 						"type": "DatasetReference"
 					}
 				]
