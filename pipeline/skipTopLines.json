@@ -68,6 +68,8 @@
 				"name": "Copy data1_copy1",
 				"description": "first we have header and then 3 junk lines which we dont need, then we have data\nSo for this we have to skip 4 rows , then set the column headers at sink\n",
 				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
