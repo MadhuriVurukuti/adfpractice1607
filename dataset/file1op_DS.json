@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "opfile1.csv",
+				"fileName": "opfile2.csv",
 				"folderPath": "practice/output",
 				"fileSystem": "landing"
 			},

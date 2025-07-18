@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "Case1.txt",
+				"fileName": "Case2.txt",
 				"folderPath": "practice",
 				"fileSystem": "landing"
 			},
