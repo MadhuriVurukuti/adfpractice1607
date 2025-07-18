@@ -111,7 +111,7 @@
 									"ordinal": 1
 								},
 								"sink": {
-									"type": "String",
+									"name": "Id",
 									"physicalType": "String"
 								}
 							},
@@ -121,7 +121,7 @@
 									"ordinal": 2
 								},
 								"sink": {
-									"type": "String",
+									"name": "Name",
 									"physicalType": "String"
 								}
 							},
@@ -131,7 +131,7 @@
 									"ordinal": 3
 								},
 								"sink": {
-									"type": "String",
+									"name": "Age",
 									"physicalType": "String"
 								}
 							}
