@@ -8,6 +8,9 @@
 		"parameters": {
 			"file": {
 				"type": "string"
+			},
+			"folder": {
+				"type": "string"
 			}
 		},
 		"annotations": [],
@@ -19,7 +22,6 @@
 					"value": "@dataset().file",
 					"type": "Expression"
 				},
-				"folderPath": "interviewPrep/Target",
 				"fileSystem": "landing"
 			},
 			"columnDelimiter": ",",
