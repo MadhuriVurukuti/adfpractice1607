@@ -10,6 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": "notfound",
+				"folderPath": "target",
 				"fileSystem": "landing"
 			},
 			"columnDelimiter": ",",
