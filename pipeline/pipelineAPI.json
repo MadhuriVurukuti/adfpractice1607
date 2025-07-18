@@ -68,7 +68,8 @@
 		],
 		"parameters": {
 			"loopValue": {
-				"type": "array"
+				"type": "array",
+				"defaultValue": "[{\"name\":\"AdventureWorks_Territories.csv\"},{\"name\":\"AdventureWorks_Returns.csv\"},{\"name\":\"AdventureWorks_Products.csv\"},{\"name\":\""
 			}
 		},
 		"folder": {
