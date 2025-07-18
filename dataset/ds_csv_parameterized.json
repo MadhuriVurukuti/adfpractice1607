@@ -22,6 +22,10 @@
 					"value": "@dataset().file",
 					"type": "Expression"
 				},
+				"folderPath": {
+					"value": "interviewPrep/Target/@{dataset().folder}",
+					"type": "Expression"
+				},
 				"fileSystem": "landing"
 			},
 			"columnDelimiter": ",",
