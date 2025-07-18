@@ -66,7 +66,7 @@
 			},
 			{
 				"name": "Copy data1_copy1",
-				"description": "fir",
+				"description": "first we have header and then 3 junk lines which we dont need, then we have data\nSo for this we have to skip 4 rows , then set the column headers at sink\n",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -112,8 +112,7 @@
 								},
 								"sink": {
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 1
+									"physicalType": "String"
 								}
 							},
 							{
@@ -123,8 +122,7 @@
 								},
 								"sink": {
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 2
+									"physicalType": "String"
 								}
 							},
 							{
@@ -134,8 +132,7 @@
 								},
 								"sink": {
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 3
+									"physicalType": "String"
 								}
 							}
 						],
