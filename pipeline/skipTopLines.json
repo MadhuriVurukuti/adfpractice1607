@@ -113,8 +113,8 @@
 									"ordinal": 1
 								},
 								"sink": {
-									"name": "Id",
-									"physicalType": "String"
+									"physicalType": "String",
+									"ordinal": 1
 								}
 							},
 							{
@@ -123,8 +123,8 @@
 									"ordinal": 2
 								},
 								"sink": {
-									"name": "Name",
-									"physicalType": "String"
+									"physicalType": "String",
+									"ordinal": 2
 								}
 							},
 							{
@@ -133,8 +133,8 @@
 									"ordinal": 3
 								},
 								"sink": {
-									"name": "Age",
-									"physicalType": "String"
+									"physicalType": "String",
+									"ordinal": 3
 								}
 							}
 						],
@@ -162,8 +162,6 @@
 				"name": "Copy data1_copy1_copy1",
 				"description": "File has empty rows , but skip line count doesnt consider empty , it considers only non empty rows",
 				"type": "Copy",
-				"state": "Inactive",
-				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
@@ -182,8 +180,7 @@
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
-							"type": "DelimitedTextReadSettings",
-							"skipLineCount": 4
+							"type": "DelimitedTextReadSettings"
 						}
 					},
 					"sink": {
@@ -200,38 +197,6 @@
 					"enableStaging": false,
 					"translator": {
 						"type": "TabularTranslator",
-						"mappings": [
-							{
-								"source": {
-									"type": "String",
-									"ordinal": 1
-								},
-								"sink": {
-									"name": "Id",
-									"physicalType": "String"
-								}
-							},
-							{
-								"source": {
-									"type": "String",
-									"ordinal": 2
-								},
-								"sink": {
-									"name": "Name",
-									"physicalType": "String"
-								}
-							},
-							{
-								"source": {
-									"type": "String",
-									"ordinal": 3
-								},
-								"sink": {
-									"name": "Age",
-									"physicalType": "String"
-								}
-							}
-						],
 						"typeConversion": true,
 						"typeConversionSettings": {
 							"allowDataTruncation": true,
