@@ -4,6 +4,7 @@
 		"activities": [
 			{
 				"name": "Copy data1",
+				"description": "top3 lines are junk then we have header and data",
 				"type": "Copy",
 				"state": "Inactive",
 				"onInactiveMarkAs": "Succeeded",
@@ -65,6 +66,7 @@
 			},
 			{
 				"name": "Copy data1_copy1",
+				"description": "fir",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
