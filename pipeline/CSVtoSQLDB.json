@@ -134,14 +134,22 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
-								"variableName": "",
-								"value": ""
+								"variableName": "fileNameComing",
+								"value": {
+									"value": "@item().name",
+									"type": "Expression"
+								}
 							}
 						}
 					]
 				}
 			}
 		],
+		"variables": {
+			"fileNameComing": {
+				"type": "String"
+			}
+		},
 		"folder": {
 			"name": "InterviewQuestions"
 		},
