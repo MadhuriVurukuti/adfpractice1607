@@ -1,6 +1,7 @@
 {
 	"name": "pipelineAPI",
 	"properties": {
+		"description": "Pipeline para",
 		"activities": [
 			{
 				"name": "ForEach1",
