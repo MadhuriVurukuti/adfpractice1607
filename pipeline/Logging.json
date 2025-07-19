@@ -43,6 +43,13 @@
 							"type": "JsonReadSettings"
 						}
 					},
+					"sink": {
+						"type": "AzureSqlSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false,
+						"tableOption": "autoCreate",
+						"disableMetricsCollection": false
+					},
 					"enableStaging": false,
 					"logSettings": {
 						"enableCopyActivityLog": true,
@@ -61,6 +68,12 @@
 				"inputs": [
 					{
 						"referenceName": "Json_DS",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "AzureSql",
 						"type": "DatasetReference"
 					}
 				]
