@@ -31,6 +31,10 @@
 			"type": "string",
 			"defaultValue": "admin1"
 		},
+		"LS_API_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://raw.githubusercontent.com/"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -75,6 +79,9 @@
 					},
 					"AzureSqlDatabase1_properties_typeProperties_userName": {
 						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_userName')]"
+					},
+					"LS_API_properties_typeProperties_url": {
+						"value": "[parameters('LS_API_properties_typeProperties_url')]"
 					}
 				}
 			},
