@@ -121,6 +121,11 @@
 				}
 			}
 		],
+		"parameters": {
+			"filane": {
+				"type": "string"
+			}
+		},
 		"folder": {
 			"name": "InterviewQuestions"
 		},
