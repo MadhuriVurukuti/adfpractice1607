@@ -1,7 +1,7 @@
 {
 	"name": "pipelineAPI",
 	"properties": {
-		"description": "Pipeline para",
+		"description": "Pipeline parameter LoopValue has the file names which Foreach loop should iterate to generate the URL using this failename to copy the data calling that generated API",
 		"activities": [
 			{
 				"name": "ForEach1",
