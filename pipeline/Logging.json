@@ -16,6 +16,23 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
+					"source": {
+						"type": "JsonSource",
+						"additionalColumns": [
+							{
+								"name": "PipelineID",
+								"value": "$$FILEPATH"
+							}
+						],
+						"storeSettings": {
+							"type": "AzureBlobFSReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "JsonReadSettings"
+						}
+					},
 					"enableStaging": false,
 					"logSettings": {
 						"enableCopyActivityLog": true,
@@ -30,7 +47,13 @@
 							}
 						}
 					}
-				}
+				},
+				"inputs": [
+					{
+						"referenceName": "Json_DS",
+						"type": "DatasetReference"
+					}
+				]
 			}
 		],
 		"folder": {
