@@ -21,7 +21,17 @@
 						"additionalColumns": [
 							{
 								"name": "PipelineID",
-								"value": "$$FILEPATH"
+								"value": {
+									"value": "@pipeline().RunId",
+									"type": "Expression"
+								}
+							},
+							{
+								"name": "PipelineName",
+								"value": {
+									"value": "@pipeline().Pipeline",
+									"type": "Expression"
+								}
 							}
 						],
 						"storeSettings": {
