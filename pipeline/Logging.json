@@ -74,7 +74,10 @@
 				"outputs": [
 					{
 						"referenceName": "AzureSql",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"tableName": "Logging"
+						}
 					}
 				]
 			}
