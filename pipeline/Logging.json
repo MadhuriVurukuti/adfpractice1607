@@ -2,6 +2,24 @@
 	"name": "Logging",
 	"properties": {
 		"description": "You have to save the logs of the pipelines. How would you do that ?\nWatermarking/StoredProcedure\nEmpty files with Additional columns -\nUsing Copy Activity to save the logs",
+		"activities": [
+			{
+				"name": "Copy data1",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"enableStaging": false
+				}
+			}
+		],
 		"folder": {
 			"name": "InterviewQuestions"
 		},
