@@ -98,7 +98,7 @@
 										"container": "landing",
 										"directory": "interviewPrep/sourceForDB",
 										"fileName": {
-											"value": "@replace(item().name,'.csv','')",
+											"value": "item().name",
 											"type": "Expression"
 										}
 									}
@@ -110,7 +110,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"tableName": {
-											"value": "@item()",
+											"value": "@replace(item().name,'.csv','')",
 											"type": "Expression"
 										}
 									}
