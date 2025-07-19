@@ -77,7 +77,7 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "csv_DS1",
+									"referenceName": "parameterized",
 									"type": "DatasetReference"
 								}
 							]
