@@ -78,7 +78,11 @@
 							"inputs": [
 								{
 									"referenceName": "parameterized",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"container": "landing",
+										"directory": "interviewPrep/"
+									}
 								}
 							]
 						}
