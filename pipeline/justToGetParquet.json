@@ -30,8 +30,11 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "ds_csv_parameterized",
-						"type": "DatasetReference"
+						"referenceName": "fullyParameterized",
+						"type": "DatasetReference",
+						"parameters": {
+							"container": "landing"
+						}
 					}
 				]
 			}
