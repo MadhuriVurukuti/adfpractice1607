@@ -1,7 +1,7 @@
 {
 	"name": "Logging",
 	"properties": {
-		"description": "You have to save the logs of the pipelines. How would you do that ?\nWatermarking/StoredProcedure\n",
+		"description": "You have to save the logs of the pipelines. How would you do that ?\nWatermarking/StoredProcedure\nEmpty files with Additional columns -\nUsing Copy Activity",
 		"folder": {
 			"name": "InterviewQuestions"
 		},
