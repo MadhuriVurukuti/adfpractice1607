@@ -1,0 +1,10 @@
+{
+	"name": "Logging",
+	"properties": {
+		"description": "You have to save the logs of the pipelines.How would you do that ?",
+		"folder": {
+			"name": "InterviewQuestions"
+		},
+		"annotations": []
+	}
+}
