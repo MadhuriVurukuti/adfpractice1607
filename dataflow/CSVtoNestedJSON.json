@@ -38,7 +38,8 @@
 				"          phone_num=phone)) ~> derivedColumn1",
 				"derivedColumn1 aggregate(groupBy(employeeId,",
 				"          name,",
-				"          department)) ~> aggregate1"
+				"          department),",
+				"     ContactInfo = collect(ContactInfo)) ~> aggregate1"
 			]
 		}
 	}
