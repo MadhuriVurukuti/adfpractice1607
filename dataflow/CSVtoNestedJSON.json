@@ -31,7 +31,10 @@
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source1",
 				"source1 derive(ContactInfo = @(Item=,",
-				"          email=)) ~> derivedColumn1"
+				"          email,",
+				"          email=,",
+				"          phone,",
+				"          phone=)) ~> derivedColumn1"
 			]
 		}
 	}
