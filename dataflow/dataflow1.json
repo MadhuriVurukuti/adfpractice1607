@@ -34,8 +34,9 @@
 				"          employeeId,",
 				"          name,",
 				"          department,",
-				"          contact = contact.Item,",
-				"          email = contact.email",
+				"          Item = contact.Item,",
+				"          email = contact.email,",
+				"          phone = contact.phone",
 				"     ),",
 				"     skipDuplicateMapInputs: false,",
 				"     skipDuplicateMapOutputs: false) ~> flatten1"
