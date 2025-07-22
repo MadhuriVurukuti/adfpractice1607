@@ -30,7 +30,8 @@
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source1",
-				"source1 derive() ~> derivedColumn1"
+				"source1 derive(ContactInfo = @(Item=,",
+				"          email=)) ~> derivedColumn1"
 			]
 		}
 	}
