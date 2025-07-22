@@ -36,7 +36,9 @@
 				"source1 derive(ContactInfo = @(Item_id=Item,",
 				"          email_id=email,",
 				"          phone_num=phone)) ~> derivedColumn1",
-				"derivedColumn1 aggregate() ~> aggregate1"
+				"derivedColumn1 aggregate(groupBy(employeeId,",
+				"          name,",
+				"          department)) ~> aggregate1"
 			]
 		}
 	}
