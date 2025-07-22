@@ -16,6 +16,9 @@
 			"transformations": [
 				{
 					"name": "derivedColumn1"
+				},
+				{
+					"name": "aggregate1"
 				}
 			],
 			"scriptLines": [
@@ -32,7 +35,8 @@
 				"     ignoreNoFilesFound: false) ~> source1",
 				"source1 derive(ContactInfo = @(Item_id=Item,",
 				"          email_id=email,",
-				"          phone_num=phone)) ~> derivedColumn1"
+				"          phone_num=phone)) ~> derivedColumn1",
+				"derivedColumn1 aggregate() ~> aggregate1"
 			]
 		}
 	}
