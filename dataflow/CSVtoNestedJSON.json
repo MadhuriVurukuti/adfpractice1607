@@ -12,7 +12,11 @@
 					"name": "source1"
 				}
 			],
-			"sinks": [],
+			"sinks": [
+				{
+					"name": "sink1"
+				}
+			],
 			"transformations": [
 				{
 					"name": "derivedColumn1"
@@ -39,7 +43,11 @@
 				"derivedColumn1 aggregate(groupBy(employeeId,",
 				"          name,",
 				"          department),",
-				"     ContactInfo = collect(ContactInfo)) ~> aggregate1"
+				"     ContactInfo = collect(ContactInfo)) ~> aggregate1",
+				"aggregate1 sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> sink1"
 			]
 		}
 	}
