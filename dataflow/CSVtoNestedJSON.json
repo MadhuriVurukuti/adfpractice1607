@@ -14,6 +14,10 @@
 			],
 			"sinks": [
 				{
+					"dataset": {
+						"referenceName": "Json3",
+						"type": "DatasetReference"
+					},
 					"name": "sink1"
 				}
 			],
@@ -46,6 +50,15 @@
 				"     ContactInfo = collect(ContactInfo)) ~> aggregate1",
 				"aggregate1 sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
+				"     input(",
+				"          employeeId as integer,",
+				"          name as string,",
+				"          department as string,",
+				"          contact as (Item as string, email as string, phone as string)[]",
+				"     ),",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true) ~> sink1"
 			]
