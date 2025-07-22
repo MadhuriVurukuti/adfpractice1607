@@ -5,14 +5,26 @@
 		"typeProperties": {
 			"sources": [
 				{
+					"dataset": {
+						"referenceName": "Json2",
+						"type": "DatasetReference"
+					},
 					"name": "source1"
 				}
 			],
 			"sinks": [],
 			"transformations": [],
 			"scriptLines": [
-				"source(allowSchemaDrift: true,",
-				"     validateSchema: false) ~> source1"
+				"source(output(",
+				"          employeeId as integer,",
+				"          name as string,",
+				"          department as string,",
+				"          contact as (Item as string, email as string, phone as string)[]",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false,",
+				"     documentForm: 'documentPerLine') ~> source1"
 			]
 		}
 	}

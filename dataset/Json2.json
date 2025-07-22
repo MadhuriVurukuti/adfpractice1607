@@ -1,0 +1,50 @@
+{
+	"name": "Json2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "emptyjson.json",
+				"folderPath": "22ndjul/input",
+				"fileSystem": "landing"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"employeeId": {
+					"type": "integer"
+				},
+				"name": {
+					"type": "string"
+				},
+				"department": {
+					"type": "string"
+				},
+				"contact": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"Item": {
+								"type": "string"
+							},
+							"email": {
+								"type": "string"
+							},
+							"phone": {
+								"type": "string"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
